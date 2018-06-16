@@ -1,0 +1,492 @@
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    font-family: "Open Sans","Roboto", sans-serif;
+}
+body {
+    width: 100%;
+    /*background-image: url(images/BG_01.png);*/
+    background-color: #f4f4f6;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+h1 {
+    color: darkslategray;
+    font-size: 48px;
+    font-family: "Open Sans";
+}
+p {
+    color: darkslategray;
+    font-size: 16px;
+    font-weight: 100;
+}
+ul {
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+li {
+    color: darkslategray;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/*-----nav-----*/
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+    margin-right: 3%;
+    position: relative;
+}
+nav a:hover{
+    color: darkslategray;
+
+}
+nav a:before{
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: darkslategray;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+nav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+nav a img {
+    vertical-align: middle;
+}
+
+/*
+nav a:last-child{
+    float: right;
+
+}
+*/
+
+#rightNav{
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+nav #home{
+    color: white;
+    background-color: darkslategray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+#contactme1 {
+    color: white;
+    background-color: darkslategray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/*-----header-----*/
+header {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+header p {
+    width: 45%;
+    margin: 30px auto 0 auto;
+}
+header a {
+    color: #FF4A5E;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0, 5%, 0, 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    margin: 2%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+header h2 {
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.stack {
+    margin: 0, 0, 8%, 0; 
+}
+
+/*-----work-----*/
+.work {
+    text-align: center;
+    width: 100%;
+}
+
+.work h1 {
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.work a img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.container {
+    margin: 1%;
+    position: relative;
+    width: 45%;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: .5s ease;
+    background-color:#25272C; /* #008CBA;*/
+    z-index: 1;
+    display: block;
+}
+
+.container:hover .overlay{
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*-----whatIDO-----*/
+.whatIDo {
+    text-align: center;
+    margin: 100px 0 200px 0;
+    position: relative;
+}
+.whatIDo h1 {
+    color: darkslategray;
+    text-decoration: underline;
+}
+.iAm {
+    color: #25272C;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: -20px;
+    z-index: -1;
+}
+
+.tools {
+    color: darkslategray;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.tools h2 {
+    margin-bottom: 10px;
+}
+
+.tools img {
+    width: 25%;
+    height: 25%;
+    position: relative;
+    margin: 1%;
+}
+
+/*-----work2-----*/
+.work2 {
+    width: 100%;
+    text-align: center;
+}
+.work2 a img{
+    margin: 1%;
+    width: 92%;
+}
+
+/*-----footer-----*/
+footer {
+    text-align: center;
+    margin: 60px 0;
+}
+footer p{
+    color: lightslategray;
+    font-weight: 500;
+}
+
+
+/*----- CONTENT PAGES ------*/
+
+.contentWrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentWrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.contentWrapper h4 {
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    color: darkslategray;
+}
+
+/*----- workHeader -----*/
+
+.workheader{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.workheader h1 {
+    text-align: left;
+}
+
+.workHeader h3{
+    font-style: italic;
+    color: gray;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+
+.workheader a{
+    color: teal;
+    text-decoration: none;
+
+}
+
+.toolUsed img {
+    max-width: 50px;
+    max-height: 50px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.0);
+
+}
+.toolUsed {
+    margin-bottom: 20px;
+}
+
+/*-----description-----*/
+.description {
+    margin-bottom: 100px;
+}
+
+.description p {
+    font-size: 14px;
+    line-height: 2.5;
+    font-weight: 100;
+}
+
+
+/*-----workImages-----*/
+.imageBlock {
+    margin-bottom: 60px;
+}
+.backToHome{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#backToHome {
+
+    color: darkslategray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkslategray;
+
+
+}
+
+#backToHome:hover{
+    color: white;
+    background-color: darkslategray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+
+}
+
+/*-----Contact Me-----*/
+
+
+.contactPoints img {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.0);
+
+}
+
+.contactBorder {
+    border-radius: 50px;
+    border-color: darkslategray;
+    border-width: 5px;
+    border-style: solid;    
+    margin: 40px 10px 10px 10px;
+}
+.contactPoints {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/*-----Responsive-----*/
+@media only screen and (max-width: 991px) {
+    header p {
+        width: 100%;
+    }
+    header .stack{
+        display: inline-block;
+    }
+    .work a img {
+        margin: 2%;
+        width: 96%;
+    }
+    .work2 a img{
+        margin: 2%;
+        width: 96%;
+    }
+    .container {
+        margin: 2%;
+        width: 96%;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 96%;
+        margin: 30px auto 100px auto;
+        text-align: left;
+    }
+    .whatIDo {
+        text-align: left;
+        width: 96%;
+        margin: 70px auto 100px auto;
+    }
+    .work h1 {
+        width: 96%;
+        margin: 30px;
+        text-align: left;
+    }
+    .iAm{
+        visibility: hidden;
+    }
+    footer {
+        text-align: left;
+        width: 98%;
+        margin: 60px auto;
+    }
+    .overlay {
+        width: 96%;
+        margin: 2%;
+        
+    }
+    .tools img{
+        width: 60%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tools {
+        text-align: left;
+    }
+    .headshot{
+        height: 25%;
+        width: 25%;
+        float: right;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .contentWrapper{
+        width: 96%;
+
+    }
+}
