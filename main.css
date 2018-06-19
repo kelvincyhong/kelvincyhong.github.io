@@ -19,6 +19,7 @@ body {
 }
 .wrapper {
     width: 90%;
+    max-width: 64rem;
     margin: 0 auto;
 }
 .clearfix::after {
