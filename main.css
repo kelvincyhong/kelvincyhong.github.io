@@ -7,7 +7,7 @@
     vertical-align: baseline;
 }
 html {
-    font-family: "Helvetica Neue", "Open Sans","Roboto", sans-serif;
+    font-family: "Open Sans","Helvetica Neue", "Roboto", sans-serif;
 }
 body {
     width: 100%;
@@ -18,7 +18,7 @@ body {
     background-size: cover;
 }
 .wrapper {
-    max-width: 85.375em;
+    width: 90%;
     margin: 0 auto;
 }
 .clearfix::after {
