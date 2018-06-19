@@ -18,7 +18,7 @@ body {
     background-size: cover;
 }
 .wrapper {
-    width: 70vw;
+    max-width: 85.375em;
     margin: 0 auto;
 }
 .clearfix::after {
