@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="javacscript.js"></script>
 <html>
     <head>
         <title>Kelvin Hong's Portfolio</title>
@@ -12,16 +11,19 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav class="clearfix">
-                <a id= "home" href="#">Home</a>
-                <a id= "contactMe" href="contactMe.html">Contact Me</a>
-                <!--<a href="#"><img id="rightNav" src="images/cropped kelvin.png" alt="dribble icon"></a>-->
-            </nav>
+            <div id ="navigation">
+                <nav class="clearfix" id="navSwitcher">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="contactMe.html">Contact Me</a>
+                    <!--<a href="#"><img id="rightNav" src="images/cropped kelvin.png" alt="dribble icon"></a>-->
+                </nav>
+            </div>
+            
             <header>
                 <h1>Kelvin Hong.</h1>
                 <div class="stack">
                         <img class="headshot" src="images/cropped kelvin.png" alt="my photo">
-                        <p class="paragraph"> I'm a University Graduate from Sydney that is an aspiring Product Designer. Check out some of my work below!</p>     
+                        <p class="paragraph"> I'm a platform designer from Sydney that is an aspiring product and brand designer. Check out some of my work below!</p>     
                 </div>
             </header>
 
@@ -32,7 +34,7 @@
                     <a href="uac.html">    
                     <div class ="overlay">
                             
-                            <div class ="text" id="portfolio1"><b>Web Design: </b>Confluence Accessibility Mode</div>
+                            <div class ="text" id="portfolio1"><b>Web Design: </b>Confluence accessibility mode</div>
                         </div>   
                         </a>        
                 </div>
@@ -40,7 +42,7 @@
                     <a href="#"><img src="images/RBANews.png" alt="project image"> </a>
                         <a href="rbanews.html">
                         <div class ="overlay">
-                            <div class ="text"><b>UI Design: </b>RBANews Prototype</div>
+                            <div class ="text"><b>UI Design: </b>RBANews prototype</div>
                         </div>   
                     </a>         
                 </div>
@@ -48,7 +50,7 @@
                         <a href="#"><img src="images/reach mockup.png" alt="project image"></a>
                         <a href="reach.html">    
                         <div class ="overlay">
-                                <div class ="text"><b>UI Design: </b>Reach App Prototype</div>
+                                <div class ="text"><b>UI Design: </b>Reach App prototype</div>
                         </div>        
                         </a>                
                 </div>
@@ -57,7 +59,15 @@
                         <a href="#"><img src="images/projectpf.png" alt="project image"></a>
                         <a href="projectpf.html">
                             <div class ="overlay">
-                                <div class ="text"><b>Graphic Design: </b>Project Passionfruit Branding</div>
+                                <div class ="text"><b>Graphic Design: </b>Project Passionfruit branding</div>
+                            </div>  
+                        </a>        
+                </div>
+                <div class="container">
+                        <a href="#"><img src="images/Food-blog-cover" alt="project image"></a>
+                        <a href="foodbloglogo.html">
+                            <div class ="overlay">
+                                <div class ="text"><b>Graphic Design: </b>Food blog logo branding</div>
                             </div>  
                         </a>        
                 </div>
@@ -89,5 +99,7 @@
             </footer>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="javascript.js"></script>
     </body>
 </html>

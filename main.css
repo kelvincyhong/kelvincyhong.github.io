@@ -101,7 +101,7 @@ nav a:last-child{
 
 }
 
-nav #home{
+nav .active {
     color: white;
     background-color: darkslategray;
     padding-top: 5px;
@@ -112,17 +112,6 @@ nav #home{
     font-weight: bold;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 
-}
-#contactme1 {
-    color: white;
-    background-color: darkslategray;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
 /*-----header-----*/
@@ -227,7 +216,6 @@ header h2 {
 }
 .whatIDo h1 {
     color: darkslategray;
-    text-decoration: underline;
 }
 .iAm {
     color: #25272C;
@@ -423,6 +411,9 @@ footer p{
     }
     header .stack{
         display: inline-block;
+    }
+    .headshot{
+        max-width: 130px;
     }
     .work a img {
         margin: 2%;
