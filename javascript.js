@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     
     $(function(){
         $(".clearfix > a").click(function(){
@@ -39,6 +39,6 @@ $(document).ready(function(){
     }
     */
 
-});
+//});
 
 

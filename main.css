@@ -12,7 +12,7 @@ html {
 body {
     width: 100%;
     /*background-image: url(images/BG_01.png);*/
-    background-color: #f4f4f6;
+    background-color: #262626;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,12 +28,12 @@ body {
     display: table;
 }
 h1 {
-    color: darkslategray;
+    color: #e3e0dd;
     font-size: 48px;
     font-family: "Open Sans";
 }
 p {
-    color: darkslategray;
+    color: #e3e0dd;
     font-size: 16px;
     font-weight: 100;
 }
@@ -43,9 +43,13 @@ ul {
     margin-bottom: 20px;
 }
 li {
-    color: darkslategray;
+    color: #e3e0dd;
     font-size: 16px;
     margin-bottom: 20px;
+}
+.logomark {
+    width: 30%;
+    align-content: center;
 }
 /*-----nav-----*/
 nav {
@@ -53,13 +57,13 @@ nav {
     line-height: 100px;
 }
 nav a {
-    color: darkslategray;
+    color: #62d7a0;
     text-decoration: none;
     margin-right: 3%;
     position: relative;
 }
 nav a:hover{
-    color: darkslategray;
+    color: #e3e0dd;
 
 }
 nav a:before{
@@ -69,7 +73,7 @@ nav a:before{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: darkslategray;
+  background-color: #e3e0dd;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -102,8 +106,8 @@ nav a:last-child{
 }
 
 nav .active {
-    color: white;
-    background-color: darkslategray;
+    color: #262626;
+    background-color: #62d7a0;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -215,10 +219,10 @@ header h2 {
     position: relative;
 }
 .whatIDo h1 {
-    color: darkslategray;
+    color: #e3e0dd;
 }
 .iAm {
-    color: #25272C;
+    color: #62d7a0;
     font-size: 150px;
     position: absolute;
     left: 50%;
@@ -229,7 +233,7 @@ header h2 {
 }
 
 .tools {
-    color: darkslategray;
+    color: #e3e0dd;
     text-align: center;
     width: 100%;
     margin-top: 20px;
@@ -261,7 +265,7 @@ footer {
     margin: 60px 0;
 }
 footer p{
-    color: lightslategray;
+    color: #e3e0dd;
     font-weight: 500;
 }
 
@@ -285,7 +289,7 @@ footer p{
     margin-top: 5px;
     font-size: 12px;
     font-style: italic;
-    color: darkslategray;
+    color: #62d7a0;
 }
 
 /*----- workHeader -----*/
@@ -300,7 +304,7 @@ footer p{
 
 .workHeader h3{
     font-style: italic;
-    color: gray;
+    color: #62d7a0;
     text-align: left;
     font-weight: lighter;
     margin-top: 10px;
@@ -308,7 +312,7 @@ footer p{
 
 
 .workheader a{
-    color: teal;
+    color: #62d7a0;
     text-decoration: none;
 
 }
@@ -346,7 +350,7 @@ footer p{
 
 #backToHome {
 
-    color: darkslategray;
+    color: #62d7a0;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -356,14 +360,14 @@ footer p{
     text-decoration: none;
     border-style: solid;
     border-width: 2px;
-    border-color: darkslategray;
+    border-color: #62d7a0;
 
 
 }
 
 #backToHome:hover{
-    color: white;
-    background-color: darkslategray;
+    color: #262626;
+    background-color: #62d7a0;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -389,7 +393,7 @@ footer p{
 
 .contactBorder {
     border-radius: 50px;
-    border-color: darkslategray;
+    border-color: #e3e0dd;
     border-width: 5px;
     border-style: solid;    
     margin: 40px 10px 10px 10px;
@@ -427,6 +431,7 @@ footer p{
         margin: 2%;
         width: 96%;
     }
+    
 
     
     
@@ -480,5 +485,9 @@ footer p{
     .contentWrapper{
         width: 96%;
 
+    }
+    .logomark {
+        width: 80%;
+        float: center;
     }
 }
